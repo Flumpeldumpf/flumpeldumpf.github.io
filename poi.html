@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Poi Slideshow</title>
+    <link rel="stylesheet" href="stylesPoi.css">
+</head>
+
+<body class="dark-theme">
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="poi.html">Poi</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="assets/poiAlbum/poi1.jpeg" alt="Poi 1">
+            <div class="caption">Poi dancing, or spinning, is a dance with tethered objects tied to strings.</div>
+        </div>
+        <div class="slide fade">
+            <img src="assets/poiAlbum/poi4.jpeg" alt="Poi 4">
+            <div class="caption">Modern poi stemmed from a traditional Maori dance with shorter strings.</div>
+        </div>
+        <div class="slide fade">
+            <img src="assets/poiAlbum/poiIntro.jpeg" alt="Poi 1">
+            <div class="caption">I discovered poi when I was 12 years old. Here's a photo!</div>
+        </div>
+        <div class="slide fade">
+            <img src="assets/poiAlbum/poi2.jpeg" alt="Poi 2">
+            <div class="caption">I'm inspired the most by <a href="https://youtu.be/jHfdbdAwISI?t=19">this video</a> of
+                Johnathan Alvarez spinning poi.</div>
+        </div>
+        <div class="slide fade">
+            <img src="assets/poiAlbum/poi3.jpeg" alt="Poi 3">
+            <div class="caption">Nick Woosley's poi courses and youtube videos taught me everything I know about how to
+                spin poi; He was a huge influence on almost everyone who dances with poi today.</div>
+        </div>
+
+        <div class="slide fade">
+            <img src="assets/poiAlbum/poi5.jpeg" alt="Poi 5">
+            <div class="caption">I'm currently experimenting with ways of integrating music with poi through
+                multidimensional motion sensors in the poi weights.</div>
+        </div>
+        <div class="slide fade">
+            <img src="assets/poiAlbum/poi6.jpeg" alt="Poi 6">
+            <div class="caption">Experimenting with timing and trails under the stars.</div>
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">❮</a>
+        <a class="next" onclick="changeSlide(1)">❯</a>
+    </div>
+    <div class="dots-container">
+        <!-- Dynamically inserted -->
+    </div>
+    <script src="animatePoi.js"></script>
+</body>
+
+</html>

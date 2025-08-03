@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Andersen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="poi.html">Poi</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="media-gallery">
+            <h2>Media Gallery</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="assets/miscAlbum/cat1.jpeg" alt="Lyra" onclick="openModal(this.src)">
+                    <figcaption>This cat is named Lyra.</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/miscAlbum/cat2.jpeg" alt="Luna" onclick="openModal(this.src)">
+                    <figcaption>This cat is Lyra's sister, Luna.</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/miscAlbum/cabinPosingWithMom.jpg" alt="Cabin with Mom"
+                        onclick="openModal(this.src)">
+                    <figcaption>I like to go hiking and running, I got it from my mom!</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/miscAlbum/trailRace.jpg" alt="Running" onclick="openModal(this.src)">
+                    <figcaption>Running Mt. Finnlyson in 2022</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/miscAlbum/scarf1.jpeg" alt="Beginning Scarf" onclick="openModal(this.src)">
+                    <figcaption>Beginning my scarf!</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/miscAlbum/scarf2.jpeg" alt="Scarf" onclick="openModal(this.src)">
+                    <figcaption>Almost done knitting.</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="books">
+            <h2>Current Books</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="assets/miscAlbum/houseOfLeaves.webp" alt="House of Leaves Cover"
+                        onclick="openModal(this.src)">
+                    <figcaption>House of Leaves - Mark Z. Danielewski</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/miscAlbum/salemsLot.jpg" alt="Salem's Lot Cover" onclick="openModal(this.src)">
+                    <figcaption>Salem's Lot - Stephen King</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <div id="imageModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" class="modal-content" />
+    </div>
+</body>
+<script src="gallery.js"></script>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Andersen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="poi.html">Poi</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+        </section>
+        <section id="work">
+            <h2>My Work</h2>
+            <p id="intro">My most recent work has been with the Universal Jazz Advocates and Mentors Society (UJAM) for
+                the past two years, and with the Victoria Arion Male Choir (VAMC) for the past five years. Work for the
+                VAMC has included recording and mixing the choir, editing <a
+                    href="https://www.youtube.com/@vamchoir">youtube
+                    videos,</a> writing <a href="assets/The_Skipping_Stone_v2.0.3.pdf" target="_blank">a
+                    composition</a>, and leading sectionals.</p>
+            <p>Work for UJAM involved more administrative work, including building the <a
+                    href="https://www.ujam.ca/">UJAM website</a>, managing camp registration, emails, transcribing music
+                for singers for the monthly vocal night, making posters and managing social media, and so much more.</p>
+            <div class="work-grid">
+                <figure class="work-card">
+                    <img src="assets/recordingAlbum/rec1.jpeg" alt="Recording 1" onclick="openModal(this.src)">
+                    <figcaption>Recording the VAMC, Dec 2021</figcaption>
+                </figure>
+                <figure class="work-card">
+                    <img src="assets/recordingAlbum/rec2.jpeg" alt="Recording 1" onclick="openModal(this.src)">
+                    <figcaption>VAMC Singout, 2024</figcaption>
+                </figure>
+                <figure class="work-card">
+                    <img src="assets/recordingAlbum/rec3.jpeg" alt="Recording 1" onclick="openModal(this.src)">
+                    <figcaption>Making recording for Lansdowne Middle School, December 2021</figcaption>
+                </figure>
+                <figure class="work-card">
+                    <img src="assets/recordingAlbum/ujam1.jpg" alt="UJAM 1" onclick="openModal(this.src)">
+                    <figcaption>In the office at the UJAM summer jazz workshop in 2024, with Joe Hatherill</figcaption>
+                </figure>
+            </div>
+        </section>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/NkeX1mGLgD0"
+                title="The VAMC presents A Concert of Remembrance - November 2021" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <section id="posters">
+            <h2>Posters</h2>
+            <div class="poster-grid">
+                <img src="assets/posterAlbum/MondayMagAug.png" alt="Concert Series 2025" onclick="openModal(this.src)">
+                <img src="assets/posterAlbum/USJW202511x17poster.png" alt="UJAM Summer Jazz Workshop 2025"
+                    onclick="openModal(this.src)">
+                <img src="assets/posterAlbum/concertSeriesPoster.png" alt="Concert Series 2024"
+                    onclick="openModal(this.src)">
+                <img src="assets/posterAlbum/ClubNightPosterApril2025.png" alt="Club Night Poster"
+                    onclick="openModal(this.src)">
+                <img src="assets/posterAlbum/ClubNightPosterDecember2024v2.3.png" alt="Club Night Poster"
+                    onclick="openModal(this.src)">
+                <img src="assets/posterAlbum/ClubNightPosterFebruary2025v2.2.png" alt="Club Night Poster"
+                    onclick="openModal(this.src)">
+                <img src="assets/posterAlbum/ClubNightPosterMay2025.png" alt="Club Night Poster"
+                    onclick="openModal(this.src)">
+                <img src="assets/posterAlbum/ClubNightPosterJanuary2025v1.1.png" alt="Club Night Poster"
+                    onclick="openModal(this.src)">
+                <img src="assets/posterAlbum/ClubNightPosterSep2024v2.png" alt="Club Night Poster"
+                    onclick="openModal(this.src)">
+                <img src="assets/posterAlbum/ClubNightPosterOct2024.png" alt="Club Night Poster"
+                    onclick="openModal(this.src)">
+                <img src="assets/posterAlbum/ujas-posterFall2024.png" alt="UJAM Young All-Stars Poster"
+                    onclick="openModal(this.src)">
+            </div>
+        </section>
+    </main>
+    </main>
+    <script src="app.js"></script>
+    <script src="gallery.js"></script>
+    <div id="imageModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" class="modal-content" />
+    </div>
+</body>
+
+</html>

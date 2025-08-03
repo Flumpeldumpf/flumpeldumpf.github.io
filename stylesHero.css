@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+
+nav a:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+nav {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Poster carousel */
+.poster-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.poster-scroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+}
+
+.poster-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.poster-scroll img {
+    width: 300px;
+    aspect-ratio: 11 / 17;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.nav-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    cursor: pointer;
+}
+
+.nav-left {
+    left: 0;
+}
+
+.nav-right {
+    right: 0;
+}
+
+/* Dark overlay theme */
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), black;
+    color: #f4f1e9;
+    font-family: 'Avenir', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    z-index: 10;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-list li a:hover {
+    text-decoration: underline;
+}
+
+.hero-container {
+    position: relative;
+}
+
+.hero-container img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 8rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 5px 10px;
+    font-family: 'Brush Script MT', serif;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery a {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    color: #f4f1e9;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.bio-overlay {
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 30px;
+    max-width: 50vw;
+    text-align: left;
+    border-radius: 8px;
+    z-index: 20;
+    font-size: 1.2rem;
+    font-family: 'Avenir Light', sans-serif;
+    transition: opacity 0.6s ease;
+}
+
+.bio-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.bio-overlay.visible {
+    opacity: 1;
+}
+
+.poi-intro img {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 40px auto;
+}

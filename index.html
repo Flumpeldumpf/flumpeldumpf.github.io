@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Andersen</title>
+    <link rel="stylesheet" href="stylesHero.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="poi.html">Poi</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+        <div class="hero-container">
+            <img src="assets/hero.jpeg" alt="Hero Image">
+            <div class="hero-text">Alex Andersen</div>
+            <div class="bio-overlay hidden">
+                <p>I'm an artist studying music & technology who loves poi dancing, horror books and movies, and
+                    outdoor
+                    adventures. Welcome to my website!</p>
+            </div>
+        </div>
+    </header>
+    <script>
+        let lastScrollY = 0;
+        const bio = document.querySelector('.bio-overlay');
+
+        window.addEventListener('wheel', (e) => {
+            e.preventDefault();
+
+            if (e.deltaY > 0) {
+                // Scrolling down
+                bio.classList.remove('hidden');
+                bio.classList.add('visible');
+            } else if (e.deltaY < 0) {
+                // Scrolling up
+                bio.classList.remove('visible');
+                bio.classList.add('hidden');
+            }
+        }, { passive: false });
+    </script>
+
+</body>
+
+</html>
