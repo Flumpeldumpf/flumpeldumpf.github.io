@@ -316,3 +316,47 @@ audio {
 .modal.show {
     display: block;
 }
+
+@media (max-width: 768px) {
+    main {
+        padding: 0 20px;
+    }
+
+    section {
+        margin: 40px 0;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .banner {
+        height: 250px;
+    }
+
+    .hero-text {
+        font-size: 1.2rem;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .gallery,
+    .poster-grid,
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .poster-scroll img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .work-card {
+        max-width: 100%;
+    }
+
+    .video iframe {
+        max-width: 100%;
+        width: 100%;
+    }
+}
